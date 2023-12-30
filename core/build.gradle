@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group = 'club.createworld.tool.core'
+version = "${VERSION}"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+}
+
+test {
+    useJUnitPlatform()
+}
