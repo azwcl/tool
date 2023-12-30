@@ -119,6 +119,7 @@ public class StringUtil {
      * @param object     对象
      * @param defaultVal 默认值
      * @return 调用对象 toString 方法；如果对象为空，则返回默认值
+     * @since 0.0.1
      */
     public static String toString(Object object, String defaultVal) {
         return object == null ? defaultVal : object.toString();
@@ -129,6 +130,7 @@ public class StringUtil {
      *
      * @param object 待传输对象，可能为 null
      * @return 如果不为 null 的对象，调用其 toString 方法返回；返回空字符串，如果传入的对象是 null；
+     * @since 0.0.1
      */
     public static String null2String(Object object) {
         return object == null ? EMPTY_STRING : object.toString();
@@ -139,6 +141,7 @@ public class StringUtil {
      *
      * @param val 待转换的值
      * @return 返回转换的值；如果无法转换，返回 null
+     * @since 0.0.1
      */
     public static Integer toInteger(CharSequence val) {
         if (isEmpty(val)) {
@@ -157,6 +160,7 @@ public class StringUtil {
      * @param val          待转换的值
      * @param defaultValue 当无法转换时，返回该默认值
      * @return 返回转换的值；如果无法转换，返回传进的默认值
+     * @since 0.0.1
      */
     public static Integer toInteger(CharSequence val, Integer defaultValue) {
         if (isEmpty(val)) {
@@ -177,6 +181,7 @@ public class StringUtil {
      * @param endIndex     结束 CharSequence 的下标
      * @param defaultValue 默认值
      * @return 返回转换结果；如果无法转换，返回传进的默认值
+     * @since 0.0.1
      */
     public static Integer toInteger(CharSequence val, Integer startIndex, Integer endIndex, Integer defaultValue) {
         int len = length(val);
@@ -194,6 +199,7 @@ public class StringUtil {
      *
      * @param val 待转换的值
      * @return 返回转换的值；如果无法转换，返回 null
+     * @since 0.0.1
      */
     public static Long toLong(CharSequence val) {
         if (isEmpty(val)) {
@@ -212,6 +218,7 @@ public class StringUtil {
      * @param val          待转换的值
      * @param defaultValue 当无法转换时，返回该默认值
      * @return 返回转换的值；如果无法转换，返回传进的默认值
+     * @since 0.0.1
      */
     public static Long toLong(CharSequence val, Long defaultValue) {
         if (isEmpty(val)) {
@@ -232,6 +239,7 @@ public class StringUtil {
      * @param endIndex     结束 CharSequence 的下标
      * @param defaultValue 默认值
      * @return 返回转换结果；如果无法转换，返回传进的默认值
+     * @since 0.0.1
      */
     public static Long toLong(CharSequence val, Integer startIndex, Integer endIndex, Long defaultValue) {
         int len = length(val);
@@ -250,6 +258,7 @@ public class StringUtil {
      *
      * @param val 待转换的值
      * @return 返回转换的值；如果无法转换，返回 null
+     * @since 0.0.1
      */
     public static Double toDouble(CharSequence val) {
         if (isEmpty(val)) {
@@ -268,6 +277,7 @@ public class StringUtil {
      * @param val          待转换的值
      * @param defaultValue 当无法转换时，返回该默认值
      * @return 返回转换的值；如果无法转换，返回传进的默认值
+     * @since 0.0.1
      */
     public static Double toDouble(CharSequence val, Double defaultValue) {
         if (isEmpty(val)) {
@@ -288,6 +298,7 @@ public class StringUtil {
      * @param endIndex     结束 CharSequence 的下标
      * @param defaultValue 默认值
      * @return 返回转换结果；如果无法转换，返回传进的默认值
+     * @since 0.0.1
      */
     public static Double toDouble(CharSequence val, Integer startIndex, Integer endIndex, Double defaultValue) {
         int len = length(val);
@@ -313,6 +324,7 @@ public class StringUtil {
      *
      * @param val 待翻转的字符串
      * @return 翻转后字符串
+     * @since 0.0.1
      */
     public static String reverse(String val) {
         if (isBlank(val) || val.length() == 1) {
@@ -344,6 +356,7 @@ public class StringUtil {
      * @param target      目标字符串
      * @param replacement 替换字符串
      * @return 返回替换完成字符串
+     * @since 0.0.1
      */
     public static String replace(String source, String target, String replacement) {
         if (source == null || target == null || replacement == null || isEmpty(target)) {
